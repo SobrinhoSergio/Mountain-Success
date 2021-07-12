@@ -1,0 +1,60 @@
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+:root{
+    --bg: #fff;
+    --bg-panel: #ebebeb;
+    --color-headings: #0077FF;
+    --color-text: #000;
+    --branco: #fff;
+    --azul: #0445f7;
+    --azul-forte: #003957;
+    --sombra: #191919;
+    --cinza: #aeaeae;
+ 
+ }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+html{
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+    /*scroll-behavior: smooth;*/
+}
+
+body{
+    font-family: 'Fira Code', monospace;
+    color: var(--color-text);
+}
+
+.title{
+    text-align: center;
+    font-size: 3.0rem;
+    margin-bottom: 50px;
+}
+
+h3{
+    font-size: 2.0rem;
+    font-weight: normal;
+}

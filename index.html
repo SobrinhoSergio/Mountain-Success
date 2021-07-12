@@ -29,8 +29,12 @@
                 <h1> Mountain <span>Success</span>.</h1>
             </div>
 
-            <nav id="menu">
-                <ul>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+                    <span id="hamburger"></span>
+                </button>
+
+                <ul id="menu">
                     <li class="about action"><a href="#about">Sobre</a></li>
                     <li class="skills"><a href="#skills">Habilidades</a></li>
                     <li class="projects"><a href="#projects">Projetos</a></li>
@@ -48,7 +52,7 @@
                     <h3>A Melhor Profissão do Universo..</h3>
                 </hgroup>
                 <div id="btn">
-                    <button type="button">Venha conferir! <i class="bi bi-tsunami"></i></button>
+                    <button type="button">Venha conferir! <i class="bi bi-caret-right-fill"></i></button>
                 </div>
             </div>
         </section>
@@ -221,6 +225,9 @@
     </footer>
 
     <script src="./assets/script/main.js"></script>
-    
+    <script src="./assets/script/menu-responsivo.js"></script>
+    <script src="./assets/script/scroll-suave.js"></script>
+    <script src="./assets/script/menu-ativo.js"></script>
+
 </body>
 </html>
