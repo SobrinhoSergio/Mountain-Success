@@ -430,4 +430,90 @@ footer{
         transform: rotate(-135deg);
         top: -7px;
     }
+
+    .aside #projetos{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    #container-habilidades{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    
+    }
+   
+}
+
+@media (max-width: 700px){
+
+    .container{
+        max-width: 560px;
+    }
+
+    #logo h1{
+        font-size: 2.5rem;
+    }
+
+    #logo h1:hover{
+        transform: none;
+    }
+
+    .main #conteudo hgroup h1{
+        font-size: 2.5rem;
+    }
+    
+    .main #conteudo hgroup h3{
+        font-size: 1.5rem;
+    }
+    
+    .main #conteudo button{
+        font-size: 1.5rem
+        
+    }
+
+    #nav-links{
+        display: none;
+    }
+
+    .aside #projetos{
+        grid-template-columns: 100%;
+    }
+
+    #container-habilidades .habilidade{
+        max-width: 100%;
+        
+    }
+
+    #container-habilidades{
+        grid-template-columns: 100%;    
+    }
+
+    .footer-header{ 
+        justify-content: center;
+    }
+
+    .footer-header p{
+        margin-left: 0px;       
+    }
+    
+    .footer-header #btn-topo{
+        display: none;
+    }
+
+    .footer-links{
+        justify-content: center;
+    }
+
+    .footer-links ul{
+        margin-right: 0px;
+        
+    }
+    
+}
+
+@media (max-width: 600px){
+
+    .container{
+        max-width: 500px;
+    }
 }
