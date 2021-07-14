@@ -66,7 +66,7 @@ header{
 /*MAIN*/
 
 main{
-    background-image: url(../imagens/bg3.jpg);
+    background-image: url(../imagens/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -198,6 +198,57 @@ aside{
     background-color: var(--azul);
 }
 
+/*SECTION*/
+
+#programacao{
+    background-color: #191919;
+}
+
+.section{
+    padding: 90px 0;
+}
+
+.section #linguagens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#linguagens .linguagem {
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.4);
+    width:  150px;
+    height: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+/*@keyframes rotacao{
+	0%{
+        transform: rotate(0deg);
+    }
+
+	100%{
+        transform: rotate(360deg);
+    }
+}*/
+
+
+#linguagens .linguagem:hover {
+    background-color: var(--color-headings);
+    /*animation: rotacao 2s infinite linear;*/
+}
+
+#linguagens .linguagem span{
+    color: var(--bg-panel);
+    font-size: 8.0rem;
+    
+}
+
 /*ARTICLE*/
 
 article{
@@ -263,7 +314,7 @@ footer{
     background-color: rgba(0,0,0,0.4);
     background-blend-mode: color;
     background-attachment: fixed;
-    height: 500px;
+    height: 400px;
 }
 
 
@@ -336,7 +387,49 @@ footer{
     transition: transform 0.2s;
 }
 
+.footer-final{
+    padding: 130px 0;
+    background-color: #191919;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    gap: 20px;
+    
+}
 
+.footer-final .logo-footer{
+    font-size: 1.5rem;
+    color: var(--branco);
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.footer-final .logo-footer span{
+    color: var(--color-headings);
+}
+
+.footer-final .article-consideracoes{
+    color: var(--branco);
+}
+
+.footer-final .article-consideracoes:last-child{
+    margin-right: 70px;
+}
+
+.footer-final .article-consideracoes h4{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.footer-final .article-consideracoes p{
+    font-size: 1.5rem;
+    margin-top: 5px;
+    cursor: pointer
+    
+}
+
+
+/*RESPONSIVIDADE*/
 
 @media (max-width: 1000px) {
 
