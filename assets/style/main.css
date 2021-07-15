@@ -66,7 +66,7 @@ header{
 /*MAIN*/
 
 main{
-    background-image: url(../imagens/bg.jpg);
+    background-image: url(../imagens/bg3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -201,7 +201,7 @@ aside{
 /*SECTION*/
 
 #programacao{
-    background-color: #191919;
+    background-color: var(--bg-alternativo);
 }
 
 .section{
@@ -211,8 +211,10 @@ aside{
 .section #linguagens{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
 }
 
 #linguagens .linguagem {
@@ -298,11 +300,21 @@ article{
     color: var(--color-headings);
 }
 
-/*FOOTER*/
+/*CLIENTES*/
 
-footer{
-    background-color:#cecece;
+#clientes{
+    background-color: var(--bg);
 }
+
+.section #logos-clientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
 
 /*PARALLAX*/
 
@@ -318,22 +330,102 @@ footer{
 }
 
 
+/*FOOTER*/
+
+footer{
+   
+}
+
 .footer-header{
+    padding: 130px 0;
+    background-color: var(--bg-alternativo);    
+}
+
+#footer-header{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#footer-header .logo-footer{
+    font-size: 1.5rem;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+#footer-header .logo-footer span{
+    color: var(--color-headings);
+}
+
+#footer-header .article-consideracoes{
+    color: var(--branco);
+}
+
+#footer-header .article-consideracoes h4{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+#footer-header .article-consideracoes p{
+    font-size: 1.5rem;
+    margin-top: 5px;
+    cursor: pointer
+    
+}
+
+.footer-links{
+    background-color: var(--color-headings);
     padding: 20px 0;
+}
+
+#footer-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#footer-links ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#footer-links ul li{
+    display: flex;
+    flex-direction: row;
+    margin-left: 45px;
+}
+
+#footer-links ul li a{
+    font-size: 3.0rem;
+    color: #cecece;
+    transition: transform 0.2s;
+}
+
+#footer-links ul li a:hover{
+    transform: scale(1.3);
+    transition: transform 0.2s;
+}
+
+
+.footer-final{
+    padding: 20px 0;
+}
+
+#footer-final{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-header p{
-    margin-left: 70px;
+#footer-final p{
     color: var(--preto);
     font-size: 2.0rem;
    
 }
 
-.footer-header #btn-topo{
-    margin-right: 70px;
+#footer-final #btn-topo{
     background-color: var(--color-headings);
     width: 50px;
     height: 50px;
@@ -345,97 +437,19 @@ footer{
     transition: transform 0.5s;
 }
 
-.footer-header #btn-topo:hover{
+#footer-final #btn-topo:hover{
     transform: translate(0px, -9px);
     transition: transform 0.5s;
 }
 
-.footer-header #btn-topo span{
+#footer-final #btn-topo span{
    font-size: 2.8rem;
    color: var(--branco);
 }
 
-.footer-links{
-    background-color: var(--color-headings);
-    padding: 20px 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.footer-links ul{
-    margin-right: 70px;
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.footer-links ul li{
-    display: flex;
-    flex-direction: row;
-    margin-left: 45px;
-}
-
-.footer-links ul li a{
-    font-size: 3.0rem;
-    color: #cecece;
-    transition: transform 0.2s;
-}
-
-.footer-links ul li a:hover{
-    transform: scale(1.3);
-    transition: transform 0.2s;
-}
-
-.footer-final{
-    padding: 130px 0;
-    background-color: #191919;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: space-around;
-    gap: 20px;
-    
-}
-
-.footer-final .logo-footer{
-    font-size: 1.5rem;
-    color: var(--branco);
-    margin-left: 70px;
-    cursor: pointer;
-}
-
-.footer-final .logo-footer span{
-    color: var(--color-headings);
-}
-
-.footer-final .article-consideracoes{
-    color: var(--branco);
-}
-
-.footer-final .article-consideracoes:last-child{
-    margin-right: 70px;
-}
-
-.footer-final .article-consideracoes h4{
-    font-size: 1.7rem;
-    margin-bottom: 20px;
-}
-
-.footer-final .article-consideracoes p{
-    font-size: 1.5rem;
-    margin-top: 5px;
-    cursor: pointer
-    
-}
-
-
 /*RESPONSIVIDADE*/
 
 @media (max-width: 1000px) {
-
-    .container{
-      max-width: 800px;
-    }
 
     .header{
         flex-direction: row;
@@ -529,19 +543,21 @@ footer{
         gap: 30px;
     }
 
+
     #container-habilidades{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     
     }
+
+    #footer-header{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
    
 }
 
 @media (max-width: 700px){
-
-    .container{
-        max-width: 560px;
-    }
 
     #logo h1{
         font-size: 2.5rem;
@@ -581,32 +597,29 @@ footer{
         grid-template-columns: 100%;    
     }
 
-    .footer-header{ 
-        justify-content: center;
+    #footer-header{
+        grid-template-columns: 100%;
+        
     }
 
-    .footer-header p{
-        margin-left: 0px;       
+    #footer-final{ 
+        justify-content: center;
+    }
+    #footer-final p{
+        font-size: 1.7rem       
     }
     
-    .footer-header #btn-topo{
+    #footer-final #btn-topo{
         display: none;
     }
 
-    .footer-links{
+    #footer-links{
         justify-content: center;
-    }
-
-    .footer-links ul{
-        margin-right: 0px;
-        
     }
     
 }
 
 @media (max-width: 600px){
 
-    .container{
-        max-width: 500px;
-    }
+    
 }

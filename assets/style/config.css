@@ -29,11 +29,12 @@ img{
     --azul-forte: #003957;
     --sombra: #191919;
     --cinza: #aeaeae;
+    --bg-alternativo: #191919;
  
  }
 
 .container{
-    max-width: 1200px;
+    max-width: 85%;
     margin: 0 auto;
 }
 
