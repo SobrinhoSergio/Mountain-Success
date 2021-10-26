@@ -1,0 +1,214 @@
+@import '_variables';
+
+@media (max-width: 1000px) {
+
+    header{
+
+        .header{
+            flex-direction: row;
+            height: 90px;
+            padding: 0px;
+        }
+
+        #logo h1{
+        font-size: 2.5rem
+        }
+
+        #menu{
+            display: block;
+            position: absolute;
+            width: 100%;
+            right: 0px;
+            top: 90px;
+            background-color: $bg-panel;
+            transition: 0.6s;
+            z-index: 1000;
+            height: 0px;
+            visibility: hidden;
+            overflow-y: hidden;
+        }
+
+        #nav.active #menu {
+            height: 250px;
+            visibility: visible;
+        }
+
+        #menu{ 
+            li{
+                margin-left: 0px;
+
+                a{
+                    padding: 1rem 0;
+                    margin: 0 1rem;
+                    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+                    border-radius: 0px;
+                    font-weight: normal;
+                }
+
+                &.action a{
+                    background: none;
+                    color: $color-headings;
+                }
+            }
+        }
+
+        #btn-mobile {
+            display: flex;
+            padding: 1.5rem 1rem;
+            font-size: 1rem;
+            border: 0.5px solid #aeaeae;
+            background: none;
+            color: #aeaeae;
+            cursor: pointer;
+            gap: 0.7rem;
+        }
+
+        #hamburger {
+            border-top: 2px solid;
+            width: 20px;
+
+            &::after,
+            &::before {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: currentColor;
+                margin-top: 5px;
+                transition: 0.3s;
+                position: relative;
+            }
+        }
+
+        #nav.active{
+            #hamburger {
+                border-top-color: transparent;
+
+                &::before {
+                    transform: rotate(135deg);
+                }
+
+                &::after {
+                    transform: rotate(-135deg);
+                    top: -7px;
+                }
+            }
+        }
+    }
+
+    #projects{
+        #projetos{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+    }
+
+
+    #skills{
+        #container-habilidades{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        
+        }
+    }
+
+    footer{
+
+        #footer-header{
+            grid-template-columns: repeat(2, 1fr);
+        
+        }
+    }
+   
+}
+
+@media (max-width: 700px){
+
+    header{
+        #logo{
+        
+            h1{
+                font-size: 2.5rem;
+    
+                &:hover{
+                    transform: none;
+                }
+            }
+        }
+
+    }
+
+    #about{
+         
+        #conteudo{
+            
+            hgroup{
+                
+                h1{
+                    font-size: 2.5rem;
+                }
+
+                h3{
+                    font-size: 1.5rem;
+                }
+            }
+
+            button{
+                font-size: 1.5rem
+                
+            }
+        }
+
+        #nav-links{
+            display: none;
+        }
+    }
+
+   
+
+    #projects{ 
+        #projetos{
+            grid-template-columns: 100%;
+        }
+    }
+
+    #skills{
+
+        #container-habilidades{
+            
+            grid-template-columns: 100%;  
+            
+            .habilidade{
+                max-width: 100%;
+                
+            }
+        }
+
+    }      
+
+    footer{
+
+        #footer-header{
+            grid-template-columns: 100%;
+            
+        }
+
+        #footer-final{ 
+            justify-content: center;
+
+            p{
+                font-size: 1.7rem       
+            }
+
+            #btn-topo{
+                display: none;
+            }
+        }
+
+        #footer-links{
+            justify-content: center;
+        }
+
+    }
+    
+}

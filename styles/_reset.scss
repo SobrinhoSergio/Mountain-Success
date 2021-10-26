@@ -19,20 +19,6 @@ img{
     display: block;
 }
 
-:root{
-    --bg: #fff;
-    --bg-panel: #ebebeb;
-    --color-headings: #0077FF;
-    --color-text: #000;
-    --branco: #fff;
-    --azul: #0445f7;
-    --azul-forte: #003957;
-    --sombra: #191919;
-    --cinza: #aeaeae;
-    --bg-alternativo: #191919;
- 
- }
-
 .container{
     max-width: 85%;
     margin: 0 auto;
@@ -46,7 +32,7 @@ html{
 
 body{
     font-family: 'Fira Code', monospace;
-    color: var(--color-text);
+    color: $color-text;
 }
 
 .title{

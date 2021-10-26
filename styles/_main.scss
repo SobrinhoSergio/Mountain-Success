@@ -1,0 +1,271 @@
+/*ABOUT*/
+
+#about{
+    background-image: url(../assets/imagens/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: color;
+    background-attachment: fixed;
+    height: 650px;
+    position: relative;
+
+
+    #conteudo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+
+        hgroup{
+            color: $branco;
+            text-align: center;
+
+            h1{
+                font-size: 3.5rem;
+                margin-bottom: 15px;
+            }
+
+            h3{
+                font-size: 2.0rem;
+                margin-bottom: 30px;
+            }
+        }
+
+        button{
+            font-size: 2.0rem;
+            font-weight: normal;
+            cursor: pointer;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            
+        }
+
+        #btn{
+        display: flex;
+        justify-content: center;
+        }
+    }
+
+   
+
+    /*NAV-LINKS*/
+
+    #nav-links{
+        background-color: $bg-panel;
+        position: absolute;
+        top: 250px;
+        left: 0px;
+        padding: 20px;
+        border-radius: 0 7px 7px 0;
+    
+
+        ul{
+        display: flex;
+        flex-direction: column;
+
+            li{
+                margin-bottom: 15px;
+
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+
+                a{
+                    font-size: 2.2rem;
+                    color: #acacac;
+
+                    &:hover{
+                        color: #cecece;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/*PROJECTS*/
+
+#projects{
+    background-color: $bg;
+    
+    .projects{
+        padding: 90px 0;
+    }
+
+    #projetos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    }
+
+    figure{
+        background-color: $bg-panel;
+        
+    }
+
+    .descricao-projeto{
+        text-align: center;
+        padding: 20px;
+
+        h3{
+            font-size: 2.0rem;
+            font-weight: 550;
+            margin: 10px 0 20px 0;
+        }
+
+        p{
+            font-size: 1.7rem;
+            margin-bottom: 25px;
+        }
+
+        a{
+            width: 100%;
+            font-size: 1.7rem;
+            color: $branco;
+            background-color: $color-headings;
+            padding: 7px 30px;
+            border-radius: 3px;
+
+            &:hover{
+                background-color: $azul;
+            }
+        }
+
+    }
+
+}
+
+/*PROGRAMACAO*/
+
+#programacao{
+    background-color: $bg-alternativo;
+
+
+    .programacao{
+        padding: 90px 0;
+    }
+
+    #linguagens{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .linguagem {
+            cursor: pointer;
+            background-color: rgba(0,0,0,0.4);
+            width:  150px;
+            height: 150px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+
+            &:hover{
+                background-color: $color-headings;
+            }
+
+            span{
+                color: $bg-panel;
+                font-size: 8.0rem;
+                
+            }
+        }
+
+    } 
+}
+
+/*SKILLS*/
+
+#skills{
+    background-color: $bg-panel;
+
+    .skills{
+        padding: 90px 0;
+    }
+
+    #container-habilidades{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .habilidade{
+            max-width: 400px;
+            padding: 30px;
+            background-color: $bg;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.5s;
+
+            &:hover{
+                transform: translate(0px, -9px);
+                transition: transform 0.5s;
+            }
+        }
+    }
+
+
+    .conhecimento{ 
+        
+        h3{
+            font-size: 2.0rem;
+            margin-bottom: 30px;
+            text-align: center;
+
+            span{
+                i{
+                    font-size: 2.8rem;
+                    color: $color-headings;
+                }
+            }
+        }
+
+        p{
+            font-size: 1.5rem;
+            line-height: 30px;
+        }
+           
+    }
+}
+
+
+ /*CLIENTES*/
+
+#clientes{
+    background-color: $bg;
+
+
+    .clientes{
+        padding: 90px 0;
+    }
+
+    #logos-clientes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+}
+
+
+/*PARALLAX*/
+
+.parallax{
+    background-image: url(../assets/imagens/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: color;
+    background-attachment: fixed;
+    height: 400px;
+}
